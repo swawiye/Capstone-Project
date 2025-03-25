@@ -9,19 +9,69 @@
 </head>
 <body>
     <script src="https://kit.fontawesome.com/b848093772.js" crossorigin="anonymous"></script>
-        <!-- Navbar -->
-        <nav class="fixed top-0 w-full bg-emerald-100 text-black flex justify-between items-center px-8 z-10">
-            <div class="text-3xl font-bold">Metanoia</div>
-            <ul class="hidden md:flex space-x-6 mt-2">
-                <li><a href="index.html" class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Home</a></li>
-                <li><a href="articles.html" class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Articles</a></li>
-                <li><a href="music.html" class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Music</a></li>
-                <li><a href="get some help.html" class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Get some help?</a></li>
-                <li><button href="log in.html" class="bg-emerald-600/40 rounded-lg px-2 py-1 text-white rounded-md hover:bg-emerald-600 transition mr-3">Log In</button></li>
-            </ul>
-            <div class="md:hidden text-2xl cursor-pointer text-emerald-600/40">&#9776;</div>
-        </nav>
-        <!-- Footer -->
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-emerald-100 text-black flex justify-between items-center px-8 z-10">
+        <div class="text-3xl font-bold">Metanoia</div>
+        <ul class="hidden md:flex space-x-6 mt-2">
+            <li><a href="index.html" class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Home</a></li>
+            <li><a href="articles.html" class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Articles</a></li>
+            <li><a href="music.html" class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Music</a></li>
+            <li><a href="get some help.html" class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Get some help?</a></li>
+            <li><button class="bg-emerald-600/40 rounded-lg px-2 py-1 text-white rounded-md hover:bg-emerald-600 transition mr-3"><a href=log in.html>Log In</a></button></li>
+        </ul>
+        <div class="md:hidden text-2xl cursor-pointer text-emerald-600/40">&#9776;</div>
+    </nav>
+    <!-- Hero section -->
+    <header  class="h-screen bg-cover bg-center flex items-center justify-center text-black text-center" style="background-image: url('assets/hero section bg.jpg');">
+        <div class="bg-emerald-600/40 text-xl p-8 rounded-lg" > <!-- bg-opacity-40 -->
+            <h1 class="text-4xl font-bold">Feeling troubled?</h1>
+                <p class="mt-5">Get some help through us, we'll connect you to a psychologist near you</p>
+        </div>
+    </header>
+    <!-- Wellness tests -->
+    <div class="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-6xl gap-4 mt-5">
+        <!-- Test 1 -->
+        <div class="border border-gray-200 px-10 py-10 bg-gray-200">
+            <h3 class="text-center font-semibold text-2xl text-gray-500">How do you feel today? Take a test to see your mood.</h3>
+            <button class="mt-5 bg-gray-100 text-gray-500 rounded-md border border-2 border-gray-500 hover:bg-emerald-600/60 hover:text-white hover:border-emerald-600/60 items-center px-10 py-2 text-xl ml-35">Take the test</button>
+        </div>
+        <!-- Test 2 -->
+        <div class="border border-gray-200 px-10 py-10 bg-gray-200">
+            <h3 class="text-center font-semibold text-2xl text-gray-500">
+                Have any hobbies? If not, come discover them!
+                Take this test to see what sort of things you enjoy.
+            </h3>
+            <button class="mt-5 bg-gray-100 text-gray-500 rounded-md border border-2 border-gray-500 hover:bg-emerald-600/60 hover:text-white hover:border-emerald-600/60 items-center px-10 py-2 text-xl ml-35">Take the test</button>
+        </div>
+    </div>    
+    <!--Psychologists-->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-6xl mx-auto mt-2"> 
+        <!-- Card 1 -->
+        <div class="border border-gray-500 rounded-lg px-10 py-6 mt-5 mb-5">
+            <p class="mt-5"> </p>
+            <p class="mt-5 font-semibold text-center mt-5 text-gray-500">June Matebe</p>
+            <p class="text-gray-500 text-center">Developmental Psychologist</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="border border-gray-500 rounded-lg px-10 py-6 mt-5 mb-5">
+            <p class="mt-5"> </p>
+            <p class="mt-5 font-semibold text-center mt-5 text-gray-500">August Isaac</p>
+            <p class="text-gray-500 text-center">Counselling Psychologist</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="border border-gray-500 rounded-lg px-10 py-6 mt-5 mb-5">
+            <p class="mt-5"> </p>
+            <p class="mt-5 font-semibold text-center mt-5 text-gray-500">Jenny Hong</p>
+            <p class="text-gray-500 text-center">Health Psychologist</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="border border-gray-500 rounded-lg px-10 py-6 mt-5 mb-5">
+            <p class="mt-5"> </p>
+            <p class="mt-5 font-semibold text-center mt-5 text-gray-500">Nathaniel Suraj</p>
+            <p class="text-gray-500 text-center">Industry-Organizational Psychologist</p>
+        </div>
+    </div>     
+    <!-- Footer -->
     <footer class="bg-emerald-100  text-black py-8">
         <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             <!-- About Section -->
