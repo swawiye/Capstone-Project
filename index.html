@@ -10,83 +10,126 @@
 <body>
     <script src="https://kit.fontawesome.com/b848093772.js" crossorigin="anonymous"></script>
     <!-- Navbar -->
-    <nav class="fixed top-0 w-full bg-emerald-100 text-black flex justify-between items-center px-8 z-10">
+    <nav class="fixed top-0 w-full bg-gray-100 text-black flex justify-between items-center px-8 z-10">
         <div class="text-3xl font-bold">Metanoia</div>
         <ul class="hidden md:flex space-x-6 mt-2">
-            <li><a href="index.html " class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Home</a></li>
+            <li><a href="index.html" class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Home</a></li>
             <li><a href="articles.html" class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Articles</a></li>
             <li><a href="music.html" class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Music</a></li>
             <li><a href="get some help.html" class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Get some help?</a></li>
-            <li><button class="bg-emerald-600/40 rounded-lg px-2 py-1 text-white rounded-md hover:bg-emerald-600 transition mr-3"><a href=log in.html>Log In</a></button></li>
+            <li><a href="login.html"><button class="bg-emerald-600/40 rounded-lg px-2 py-1 text-white rounded-md hover:bg-emerald-600 transition mr-3">Log In</button></a></li>
         </ul>
-        <div class="md:hidden text-2xl cursor-pointer text-emerald-600/40">&#9776;</div>
+        <div class="md:hidden text-2xl cursor-pointer white">&#9776;</div>
     </nav>
     <!-- Hero section -->
-    <header  class="h-screen bg-cover bg-center flex items-center justify-center text-black text-center" style="background-image: url('assets/hero section bg.jpg');">
-        <div class="bg-emerald-600/40 text-xl p-8 rounded-lg" > <!-- bg-opacity-40 -->
+    <header class="h-screen bg-cover bg-center flex items-center justify-center text-black text-center" style="background-image: url('assets/hero1.jpg');">
+        <div class="bg-emerald-600/60 text-xl p-8 rounded-lg" > <!-- bg-opacity-40 -->
             <h1 class="text-4xl font-bold">Transform yourself today</h1>
                 <p class="mt-5">Start the journey of changing your mind, heart, self or way of life thrrough spiritual conversion.</p>
         </div>
     </header>
     <!-- Our story -->
     <div class="text-center mt-7">
-        <h2 class="font-bold text-3xl">Our story</h2>
-        <p class="text-gray-700"> </p>
+        <div class="flex md:flex-row items-center mt-10 gap-8 px-6">
+            <figure class="size-medium">
+                <img src="assets/dimensions-of-health.jpg" alt="" class="w-full h-full object-cover">
+            </figure>
+            <div class="md:w-1/2">
+                <h2 class="mt-4 md:mt-0 font-bold text-2xl tracking-wide">
+                    <span class="text-emerald-600">Our Story:</span>Learn about our origin
+                </h2>
+                <p class="mt-2 text-gray-800">
+                    'Metanoia' means <i>the journey of changing one’s mind, heart, self or way of life; 
+                    a process that deals with spiritual conversion</i>. The genesis of this project was 
+                    the moment when a young girl realised that she had a desire to live well. Living well
+                    to her meant embracing good health practices that would enable her to enjoy the full 
+                    benefits that life has to offer. Consequently, she began her journey 4 years ago in August 
+                    2021 seeking to better herseflf by taking care of her health. We hope that our story can 
+                    inspire you to begin the endless yet exiliarating journey of 'Metanoia'.
+                </p>
+            </div>
+        </div>
+    </div>       
     <!--Testimonials-->
     <main>
         <section class="mt-10 mb-10">
             <div class="text-center mt-7">
-                <h2 class="font-bold text-3xl">Hear some voices from our community</h2>
+                <h2 class="text-emerald-600 font-bold text-3xl">Hear some voices from our community</h2>
                 <p class="text-gray-700">Here are some testimonies of people's lives which have been transformed while going through the Metanoia experience</p>
             </div>
 
             <div class="grid grid-cols-2 gap-4 max-w-6xl mx-auto mt-2">
                 <!-- Client 1 -->
-                <div class="border border-emerald-600/60 rounded-lg px-10 py-6">
+                <div class="bg-emerald-600/30 border border-emerald-600/60 rounded-lg px-10 py-6">
                     <h5 class="text-black text-center text-3xl font-bold">I learnt my personal value</h5>
-                    <p class="mt-5"> </p>
+                    <p class="mt-5">
+                        I used to struggle with my self-esteem , aside from having a poor self-perception. 
+                        I was able to realise how valuable I am as a person. This awakening catalysed a butterfly 
+                        effect in my life, that had an immense positive impact.
+                    </p>
                     <p class="mt-5 text-emerald-600 font-semibold text-center">Lima Kimae</p>
                 </div>
                 
                 <!-- Client 2 -->
-                <div class="border border-emerald-600/60 rounded-lg px-10 py-6">
+                <div class="bg-emerald-600/20 border border-emerald-600/60 rounded-lg px-10 py-6">
                     <h5 class="text-black text-center text-3xl font-bold">My though process was changed</h5>
-                    <p class="mt-5"> </p>
+                    <p class="mt-5">
+                        Normally, my thought process comprised of a linear thought process that was hard to degress
+                        from. As a result, this mindset bloomed into perpetual negativity that prevented me from achieving
+                        my goals. Manifestation of your dreams begins in the mind- I'm glad I learnt that.
+                    </p>
                     <p class="mt-5 text-emerald-600 font-semibold text-center">Malia Deng</p>
                 </div>
                 
                 <!-- Client 3 -->
-                <div class="border border-emerald-600/60 rounded-lg px-10 py-6">
+                <div class="bg-emerald-600/20 border border-emerald-600/60 rounded-lg px-10 py-6">
                     <h5 class="text-black text-center text-3xl font-bold">Self-love is important</h5>
-                    <p class="mt-5"> </p>
+                    <p class="mt-5">
+                        Five years ago, when my husband took off and left me, my persona was left damaged; much more
+                        than anything else. My life was literally falling apart. I blamed myself for that, but after 
+                        some time I realised that I had lost the love for myself. No one will ever love you as much as 
+                        you love yourself.
+                    </p>
                     <p class="mt-5 text-emerald-600 font-semibold text-center">Kaybe Ondesa</p>
                 </div>
 
                 <!-- Client 4 -->
-                <div class="border border-emerald-600/60 rounded-lg px-10 py-6">
+                <div class="bg-emerald-600/30 border border-emerald-600/60 rounded-lg px-10 py-6">
                     <h5 class="text-black text-center text-3xl font-bold">Take care of your health</h5>
-                    <p class="mt-5"> </p>
+                    <p class="mt-5">
+                        "My university years were spent well"- that's what I would say a year ago. I am glad that I 
+                        experienced the university experience wholesomely, but even then I left one thing out- my health!
+                        I have been able to understand how to cater to all five dimensions of my health.
+                    </p>
                     <p class="mt-5 text-emerald-600 font-semibold text-center">Conner Hendrew</p>
                 </div>
 
                 <!-- Client 5 -->
-                <div class="border border-emerald-600/60 rounded-lg px-10 py-6">
+                <div class="bg-emerald-600/30 border border-emerald-600/60 rounded-lg px-10 py-6">
                     <h5 class="text-black text-center text-3xl font-bold">This experience opened up my mind</h5>
-                    <p class="mt-5"> </p>
+                    <p class="mt-5">
+                        Society is just a construct created by humans to limit other human beings. I grew up in a conservative
+                        society and an even more closed off home. One day, after going out into the world I realised that something
+                        was missing. From then on, I made it my mission to diversify my experiences and open up my world!
+                    </p>
                     <p class="mt-5 text-emerald-600 font-semibold text-center">Shilo Yalle</p>
                 </div>
 
                 <!-- Client 6 -->
-                <div class="border border-emerald-600/60 rounded-lg px-10 py-6">
+                <div class="bg-emerald-600/20 border border-emerald-600/60 rounded-lg px-10 py-6">
                     <h5 class="text-black text-center text-3xl font-bold">My life will never be the same after this experience</h5>
-                    <p class="mt-5"> </p>
+                    <p class="mt-5">
+                        I thought I was living; turns out I was just an empty vessel. I felt a void grow more and more within me 
+                        as the days went by. I reconnected with my spiritual self and found fulfillment within me. I am glad to say
+                        that all I was truly missing was myself.
+                    </p>
                     <p class="mt-5 text-emerald-600 font-semibold text-center">Andre Kimanda</p>
                 </div>
             </div>
         </section>        
     </main>
     <!-- Footer -->
-    <footer class="bg-emerald-100  text-black py-8">
+    <footer class="bg-gray-100 text-black py-8">
         <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             <!-- About Section -->
             <div>
