@@ -6,21 +6,97 @@
     <title>Get some help?</title>
         <!--copied from tailwindcss, Installation section, Play CDN-->
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style>
+            body {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .navbar {
+                overflow: hidden;
+                background-color: whitesmoke;
+                z-index: 10;
+            }
+            .navbar .logo {
+                float: left;
+                color: black;
+                text-align: center;
+                text-decoration: none;
+                display: inline;
+            }
+            .navbar .logo a {
+                font-size: 22px;
+            }
+            .navbar .logo a:hover {
+                background-color:  whitesmoke;
+            }
+            .navbar a {
+                float: right;
+                font-size: 16px;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                display: inline;
+            }
+            .dropdown {
+                float: right;
+                overflow: hidden;
+            }
+            .dropdown .dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: black;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+            .navbar a:hover, .dropdown:hover .dropbtn {
+              background-color: darkseagreen;
+            }
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #F9F9F9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+            .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+            .dropdown-content a:hover {
+            background-color: #ddd;
+            }
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+        </style>
 </head>
 <body>
     <script src="https://kit.fontawesome.com/b848093772.js" crossorigin="anonymous"></script>
     <!-- Navbar -->
-    <nav class="fixed top-0 w-full bg-gray-100 text-black flex justify-between items-center px-8 z-10">
-        <div class="text-3xl font-bold">Metanoia</div>
-        <ul class="hidden md:flex space-x-6 mt-2">
-            <li><a href="index.html" class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Home</a></li>
-            <li><a href="articles.html" class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Articles</a></li>
-            <li><a href="music.html" class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Music</a></li>
-            <li><a href="get some help.html" class="hover:text-emerald-600/40 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-emerald-600/40 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">Get some help?</a></li>
-            <li><a href="login.html"><button class="bg-emerald-600/40 rounded-lg px-2 py-1 text-white rounded-md hover:bg-emerald-600 transition mr-3">Log In</button></a></li>
-        </ul>
-        <div class="md:hidden text-2xl cursor-pointer white">&#9776;</div>
-    </nav>
+    <div class="navbar">
+        <div class="logo font-bold text-4xl"><a href="index.html">Metanoia</a></div>
+        <a href="login.html"><i class="fa-solid fa-user"></i></a>
+        <a href="getsomehelp.html">Get some help?</a>
+        <a href="music.html">Music</a>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="articles.html">Articles<i class="ml-3 fa-solid fa-caret-down"></i></a></button>
+            <div class="dropdown-content">
+                <a href="#physical">Physical Health</a>
+                <a href="#emotional">Emotional Health</a>
+                <a href="#mental">Mental Health</a>
+                <a href="#social">Social Health</a>
+                <a href="#spiritual">Spiritual Health</a>
+            </div>
+        </div>
+        <a href="index.html">Home</a>
+    </div>
     <!-- Hero section -->
     <header  class="h-screen bg-cover bg-center flex items-center justify-center text-black text-center" style="background-image: url('assets/hero1.jpg');">
         <div class="bg-emerald-600/40 text-xl p-8 rounded-lg" > <!-- bg-opacity-40 -->
@@ -92,13 +168,13 @@
             </div>
             <!-- Quick Links -->
             <div>
-              <h3 class="text-lg font-semibold mb-2">Quick Links</h3>
-              <ul class="space-y-1" >
-                  <li><a href=" " class="text-black hover:text-emerald-600/60 transition">Home</a></li>
-                  <li><a href=" " class="text-black hover:text-emerald-600/60 transition">Menu</a></li>
-                  <li><a href=" " class="text-black hover:text-emerald-600/60 transition">About</a></li>
-                  <li><a href=" " class="text-black hover:text-emerald-600/60 transition">Contact Us</a></li>
-              </ul>
+                <h3 class="text-lg font-semibold mb-2">Quick Links</h3>
+                <ul class="space-y-1" >
+                    <li><a href="index.html" class="text-black hover:text-emerald-600/60 transition">Home</a></li>
+                    <li><a href="articles.html" class="text-black hover:text-emerald-600/60 transition">Articles</a></li>
+                    <li><a href="music.html" class="text-black hover:text-emerald-600/60 transition">Menu</a></li>
+                    <li><a href="get some help.html" class="text-black hover:text-emerald-600/60 transition">Get some help?</a></li>
+                </ul>
             </div>
             <!-- Contact Section -->
             <div>
