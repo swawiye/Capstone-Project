@@ -75,6 +75,16 @@
         .dropdown:hover .dropdown-content {
           display: block;
         }
+        @keyframes slideshow {
+            0%, 100% { background-image: url('assets/hero1.jpg'); }
+            33% { background-image: url('assets/hero2.jpg'); }
+            66% { background-image: url('assets/hero3.jpg'); }
+        }
+        .slideshow {
+            animation: slideshow 15s infinite ease-in-out;
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
 <body>
@@ -98,10 +108,10 @@
         <a href="index.html">Home</a>
     </div>
     <!-- Hero section -->
-    <header class="h-screen bg-cover bg-center flex items-center justify-center text-black text-center" style="background-image: url('assets/hero1.jpg');">
-        <div class="bg-emerald-600/60 text-xl p-8 rounded-lg" > <!-- bg-opacity-40 -->
+    <header id="hero" class="h-screen flex items-center justify-center text-white text-center slideshow">
+        <div class="text-black text-center bg-emerald-600/60 text-xl p-8 rounded-lg">
             <h1 class="text-4xl font-bold">Transform yourself today</h1>
-                <p class="mt-5">Start the journey of changing your mind, heart, self or way of life thrrough spiritual conversion.</p>
+            <p class="mt-5">Start the journey of changing your mind, heart, self or way of life through spiritual conversion.</p>
         </div>
     </header>
     <!-- Our story -->
@@ -210,7 +220,7 @@
             <!-- About Section -->
             <div>
               <h3 class="text-lg font-semibold mb-2">About</h3>
-              <p class="text-emerald-600/60">Start the journey of changing your mind, heart, self or way of life thrrough spiritual conversion.</p>
+              <p class="text-emerald-600/60">Start the journey of changing your mind, heart, self or way of life through spiritual conversion.</p>
             </div>
             <!-- Quick Links -->
             <div>
